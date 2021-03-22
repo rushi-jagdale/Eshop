@@ -11,7 +11,7 @@ django-allauth==0.39.1
 django-countries==5.3.3
 django-crispy-forms==1.7.2
 django-debug-toolbar==1.10.1
-djangorestframework==3.12.2
+
 gunicorn==20.0.4
 idna==2.10
 mysqlclient==2.0.3
@@ -27,9 +27,7 @@ pytz==2020.1
 razorpay==1.2.0
 requests==2.24.0
 requests-oauthlib==1.2.0
-six==1.15.0
-soupsieve==2.2
+
+
 sqlparse==0.3.1
 static3==0.7.0
-stripe==2.27.0
-urllib3==1.25.10
