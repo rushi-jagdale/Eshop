@@ -132,6 +132,7 @@ class Signup(View):
 
 
 class Login(View):
+
     def get(self, request):
         return render(request,'login.html')   
         
@@ -145,7 +146,7 @@ class Login(View):
             flag = check_password(password, customer.password)
             if flag:
                 request.session['customer'] = customer.id
-                #request.session['email'] = customer.email
+                request.session['email'] = customer.email
                 return redirect('index')
             else:
                 error_message = 'email or password invalid'

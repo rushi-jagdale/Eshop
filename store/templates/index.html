@@ -6,7 +6,7 @@
     <!-- all filter-->
     <div class="col-lg-3 mx-auto">
     <div class="list-group">
-    <a href="/" style="text-decoration: none;color: black" class"list-group-item list-group-item-action"><button style="display: table;width: 130px;padding: 0; border:1px solid lightgrey">All Products</button></a>
+    <a href="/" style="text-decoration: none;color: black" class="list-group-item list-group-item-action"><button style="display: table;width: 130px;padding: 0; border:1px solid lightgrey">All Products</button></a>
     {% for category in categories%}
     <button style="display: table;width: 130px;padding: 0; border:1px solid lightgrey"><a style="text-decoration: none;color: black" href="/?category={{category.id}}" >{{category.name}}</a>
     </button>

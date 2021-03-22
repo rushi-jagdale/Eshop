@@ -22,8 +22,7 @@
         <tr>
           <td>{{forloop.counter}}</td>
           <td>
-            <img style="height: 80px;" class="rounded-circle"
-            src="{{product.image.url}}"
+          <img src="{{product.image.url}}" style="height: 80px;" class="rounded-circle">
           </td>
           <td>{{product.name}}</td>
           <td>{{product.price|currency}}</td>
@@ -42,7 +41,9 @@
     </table>
     <hr />
     <div class="m-3 p-3">
+      
       <div style="text-align: center">
+        {% if request.session.customer %}
         <a
           href="#"
           data-bs-toggle="modal"
@@ -50,6 +51,7 @@
           class="btn btn-outline-info border rounded col-lg-3 float-right"
           >Check out</a
         >
+        {% endif %}
       </div>
     </div>
   </div>
